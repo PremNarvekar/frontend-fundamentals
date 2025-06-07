@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to right, red , orange , yellow);
+            height: 100%;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main {
+            height: 500px;
+            width: 400px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            box-shadow: black;
+        }
+
+        .m {
+            text-align: center;
+        }
+
+        input {
+            height: 25px;
+            width: 250px;
+            border-radius: 8px;
+        } 
+
+        #input label {
+            text-align: left;
+        }
+
+        textarea {
+            height: 100px;
+            width: 250px;
+            border-radius: 8px;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            background: linear-gradient(to right, #38ef7d , #007f5f );
+        }
+
+        button:hover {
+            background: linear-gradient(to right,#007bff , #00d4ff , #00ffa3);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="m"> 
+            <h1>Contact Us</h1>
+            <div id="input">
+                <label for="name">Your Name: </label><br>
+                <input type="text" id="name" placeholder="Enter Your Name Here..."><br><br>
+
+                <label for="mail">Your Email: </label><br>
+                <input type="email" id="mail" placeholder="Enter Your Email Here..." required pattern="[a-zA-Z0-9._%+=]+@gmail\.com"><br><br>
+
+                <label for="tel">Phone Number: </label><br>
+                <input type="tel" id="tel" placeholder="Enter Your Phone Number Here... " required pattern="[0-9] {10}"><br><br>
+
+                <label for="Massage">Massage: </label><br>
+                <textarea name="Massage" id="Massage" rows="6" placeholder="Enter Your Massage Here..."></textarea><br><br>
+            </div>
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
